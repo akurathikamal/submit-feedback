@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form class="feedback-form">
+      <h1>ACQUIOS</h1>
+      <div style="display: flex; justify-content: space-between">
+        <div>
+          <label for="first-name">First Name*</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+        <div>
+          <label for="last-name">Last Name*</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+      </div>
+
+      <label for="email">Email Address*</label>
+      <input type="email" id="email" name="email" required />
+      <label>How was your overall experience?*</label>
+      <div class="rating">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      </div>
+      <div class="checkbox-group" style="display: flex;justify-content: space-between;margin-top: 30px;">
+        <div>
+          <label
+            ><input type="checkbox" name="professional" /> Professional and
+            courteous?</label
+          >
+          <label
+            ><input type="checkbox" name="knowledgeable" />
+            Knowledgeable?</label
+          >
+          <label><input type="checkbox" name="friendly" /> Friendly?</label>
+          <label><input type="checkbox" name="efficient" /> Efficient?</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="patient" /> Patient?</label>
+          <label
+            ><input type="checkbox" name="warm" /> Warm and respectful?</label
+          >
+          <label
+            ><input type="checkbox" name="clear" /> Clear and direct?</label
+          >
+        </div>
+      </div>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </body>
+</html>
